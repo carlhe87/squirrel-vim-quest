@@ -1,0 +1,52 @@
+# Every line shown on screen or spoken aloud. Keep lines short and simple.
+# {key} is replaced with a key name, for example "Try j!".
+
+title: "Squirrel Vim Quest"
+story: "The wind took Pip's acorns. Help Pip get them back!"
+press_enter: "Press Enter!"
+
+arrow_island: "Arrow Island"
+word_river: "Word River"
+line_bridge: "Line Bridge"
+pick_stone: "Pick a stone!"
+not_yet: "Not yet!"
+coming_soon: "Coming soon!"
+
+go_h: "Go left!"
+go_j: "Go down!"
+go_k: "Go up!"
+go_l: "Go right!"
+go_w: "Jump to next word!"
+go_b: "Jump back!"
+go_e: "Jump to word end!"
+go_0: "Go to start!"
+go_$: "Go to end!"
+go_flag: "Go to the flag!"
+splash: "Splash!"
+catch: "Catch the ball!"
+wind: "Wind!"
+
+look: "Look!"
+now_you: "Now you!"
+yes: "Yes!"
+try_key: "Try {key}!"
+use_key: "Use {key}!"
+eat: "Eat the acorns!"
+ready: "Ready?"
+go: "Go!"
+oops: "Oops!"
+gate_open: "Go to the gate!"
+look_faster: "Look! A faster way!"
+
+stars_1: "Good!"
+stars_2: "Great!"
+stars_3: "Super!"
+
+menu_resume: "Play"
+menu_sound_on: "Sound: on"
+menu_sound_off: "Sound: off"
+menu_map: "Map"
+menu_quit: "Quit"
+
+hint_hear: "Space: hear"
+hint_menu: "Tab: menu"

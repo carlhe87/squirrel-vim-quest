@@ -1,0 +1,9 @@
+# Puzzle: reach the flag log. l works too, but only w gets 3 stars.
+# Places are word numbers, counted from 0 (see levels.py).
+kind: puzzle
+keys: hlwb
+par: 6  # wwwwww
+text: |
+  cat sun big dog red hat pen
+start: 0
+flag: 6

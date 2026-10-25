@@ -1,0 +1,4 @@
+# Meet: show each key, then the child presses it 3 times.
+kind: meet
+keys: hjkl
+teach: [j, k, h, l]

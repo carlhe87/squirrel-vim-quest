@@ -1,0 +1,50 @@
+SQUIRREL VIM QUEST
+==================
+
+A keyboard game for young kids (about 6 and up). Pip the squirrel teaches the
+Vim keys: h j k l, then w b e, then 0 and $. Pip speaks every instruction, so
+the child does not need to read.
+
+Works on Windows 10 and Windows 11. Nothing else to install.
+
+
+INSTALL
+-------
+1. Unzip this folder (right-click the zip, "Extract All...").
+2. Double-click  install.cmd
+3. Play with the "Squirrel Vim Quest" icon on the Desktop or in the Start Menu.
+   You can also type  SquirrelVimQuest  in any new terminal window.
+
+Just want to try it? Double-click SquirrelVimQuest.exe, no install needed.
+
+"Windows protected your PC"?
+  The game is not signed by a company, so Windows asks first.
+  Click "More info", then "Run anyway".
+
+
+KEYS
+----
+  h j k l   move (left, down, up, right)
+  w b e     jump between words
+  0 $       go to the start or end of a line ($ is Shift + 4)
+  Enter     start a level
+  Space     hear the last instruction again
+  Tab       menu: sound on/off, map, quit
+
+The arrow keys are switched off on purpose: Pip tells you which letter to use.
+
+
+GOOD TO KNOW
+------------
+- Looks best in Windows Terminal (free in the Microsoft Store). The game opens
+  in it by itself when it is installed. Make the window big if levels look cut.
+- No voice? The game uses Windows' built-in English voice. Add one in
+  Settings > Time & language > Speech > Manage voices > Add voices > English.
+- Saved stars are kept in %APPDATA%\SquirrelVimQuest. Delete that folder to
+  start again from the first level.
+
+
+UNINSTALL
+---------
+Double-click uninstall.cmd (in this folder, or in
+%LOCALAPPDATA%\Programs\SquirrelVimQuest). Saved stars are kept.

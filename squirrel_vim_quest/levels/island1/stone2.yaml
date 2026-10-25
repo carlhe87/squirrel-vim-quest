@@ -1,0 +1,10 @@
+# Puzzle: one acorn on an open field.
+# Map: P = Pip, o = acorn, # = rock, . = grass
+kind: puzzle
+keys: hjkl
+par: 6
+map: |
+  .......
+  .P.....
+  .......
+  .....o.

@@ -1,0 +1,15 @@
+# Action: Frog River. The words drift left like logs. Stand too long on one
+# log and it sinks; drift off the left edge and Pip falls in. Acorns sit on
+# the first letters of logs, so w and b reach them exactly.
+kind: action
+keys: wb
+settings:
+  game: river
+  duration: 45
+  view: 24  # letters of river on screen
+  drift_start: 1.4  # seconds per one-letter drift
+  drift_end: 0.8
+  sink_start: 4.0  # seconds before the log under Pip sinks
+  sink_end: 2.5
+  spawn_every: 2.2
+  words: [cat, sun, big, dog, red, hat, pen, cup, fox, log, bee, egg, ant, jam, map, net, owl, pig, web, nut]

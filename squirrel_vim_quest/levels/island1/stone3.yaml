@@ -1,0 +1,11 @@
+# Puzzle: three acorns around rocks. Any order; par uses the best order.
+kind: puzzle
+keys: hjkl
+par: 13  # jj, jj llllll, kkk (tests/test_levels.py checks this)
+map: |
+  .........
+  .P..#....
+  ....#..o.
+  .o..#....
+  ....###..
+  .......o.

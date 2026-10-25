@@ -1,0 +1,15 @@
+# Bonus: meet e (run to the end of the log), then a puzzle with acorns on
+# log ends.
+kind: bonus
+keys: hlwbe
+teach: [e]
+par: 6  # e e, e e, e e
+settings:
+  meet_text: "cat sun big dog red hat"
+text: |
+  sun hat big dog fox cup
+start: 0
+acorns:
+  - {word: 1, at: end}
+  - {word: 3, at: end}
+  - {word: 5, at: end}

@@ -1,0 +1,15 @@
+# Action: Ping-Pong. A ball rolls from the middle of a bridge to one end;
+# stand on that end to catch it. The green "vv" shows which end.
+kind: action
+keys: "0$jk"
+settings:
+  game: pong
+  theme: bridge
+  duration: 45
+  travel_start: 3.2  # seconds for the ball to reach the end
+  travel_end: 1.8
+  gap: 0.8  # pause between balls
+text: |
+  pip can run to the end
+  the ball goes far
+start: 0

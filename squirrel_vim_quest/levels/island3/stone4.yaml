@@ -1,0 +1,16 @@
+# Puzzle: acorns in the middle of bridges. Fastest is 0 or $ first, then w,
+# b or e from there.
+kind: puzzle
+keys: "hjkl0$wbe"
+par: 8  # e.g. $ b, j b b, j b b e
+settings:
+  theme: bridge
+text: |
+  a big red bus
+  the cat sat on a mat
+  we go up the hill
+start: 0
+acorns:
+  - 3
+  - 8
+  - {word: 13, at: end}

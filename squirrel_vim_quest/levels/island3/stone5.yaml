@@ -1,0 +1,20 @@
+# Boss: Storm Bridge. Acorns pop up anywhere; eat 8 to win. The wind marks a
+# bridge ("~ ~"), then blows: Pip must hop off that bridge with j or k in time.
+kind: boss
+keys: "hjklwbe0$"
+settings:
+  game: storm
+  theme: bridge
+  goal: 8
+  max_acorns: 2
+  acorn_life: 9.0
+  spawn_every: 1.0
+  gust_every: 5.0
+  gust_warn: 1.8
+  gust_blow: 0.6
+text: |
+  the wind is big and cold
+  pip holds on to the rail
+  a red kite flies up high
+  the storm will go away
+start: 0

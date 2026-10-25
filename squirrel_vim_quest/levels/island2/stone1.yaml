@@ -1,0 +1,6 @@
+# Meet: w jumps to the next log (word), b jumps back.
+kind: meet
+keys: wb
+teach: [w, b]
+settings:
+  meet_text: "cat sun big dog red hat"

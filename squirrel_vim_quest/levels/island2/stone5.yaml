@@ -1,0 +1,22 @@
+# Boss: Fish Rapids. Eat the acorns on log starts, then the flag opens.
+# Fish jump onto logs: a "!!" shows where, then they splash. A splash on Pip
+# sends Pip back to the start. Gold acorns sit on log ends: only e reaches
+# them, and all of them are needed for 3 stars.
+kind: boss
+keys: wbejk
+settings:
+  game: rapids
+  fish_every: 2.2
+  fish_warn: 1.3
+  fish_splash: 0.5
+text: |
+  the sun is up and hot
+  a red fox ran far away
+  pip can hop on big logs
+start: 0
+acorns: [3, 8, 10, 14]
+gold:
+  - {word: 1, at: end}
+  - {word: 11, at: end}
+  - {word: 16, at: end}
+flag: 17

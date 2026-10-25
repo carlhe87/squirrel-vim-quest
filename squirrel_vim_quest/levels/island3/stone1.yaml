@@ -1,0 +1,7 @@
+# Meet: $ runs to the far end of the bridge, 0 back to the start.
+kind: meet
+keys: "0$"
+teach: ["$", "0"]
+settings:
+  theme: bridge
+  meet_text: "pip can run to the end"

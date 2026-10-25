@@ -1,0 +1,18 @@
+# Puzzle: acorns at bridge starts and ends over 4 bridges. h and l work, but
+# par uses 0, $, j and k. After $, j stays at the end of the next bridge.
+kind: puzzle
+keys: "hjkl0$"
+par: 6  # $ j j j k 0
+settings:
+  theme: bridge
+text: |
+  sun is up
+  pip can run to the end
+  red hat
+  the big dog naps
+start: 0
+acorns:
+  - {word: 2, at: end}
+  - {word: 8, at: end}
+  - 9
+  - {word: 14, at: end}

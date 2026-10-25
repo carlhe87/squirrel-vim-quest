@@ -1,0 +1,15 @@
+# Boss: Fox Maze. Eat every acorn, then the gate (>) opens. Two foxes chase.
+# A bump sends Pip back to the start but keeps the acorns already eaten.
+kind: boss
+keys: hjkl
+settings:
+  fox_every: 0.9
+  fox_wander: 0.3  # chance a fox takes a random step instead of chasing
+map: |
+  P...#.....o
+  .##.#.###..
+  .#..o...#..
+  .#.###..#.#
+  .o...#F....
+  .###.#.##.#
+  o....F..#.>

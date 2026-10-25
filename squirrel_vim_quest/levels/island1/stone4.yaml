@@ -1,0 +1,20 @@
+# Action: Acorn Garden. Acorns pop up and vanish; one slow snail wanders.
+# S = snail start. Times are in seconds; spawn and life shrink as time runs out.
+kind: action
+keys: hjkl
+settings:
+  duration: 45
+  spawn_start: 3.0
+  spawn_end: 1.6
+  life_start: 7.0
+  life_end: 4.5
+  snail_every: 1.2
+  snail_wander: 0.4  # chance the snail takes a random step instead of chasing
+map: |
+  .........
+  ..#...#..
+  .........
+  ....P....
+  .........
+  ..#...#..
+  S........
