@@ -81,12 +81,18 @@ def _relaunch_in_windows_terminal(argv: list[str]) -> bool:
     wt = shutil.which("wt")
     if not wt:
         return False
+    env = dict(os.environ)
     if getattr(sys, "frozen", False):  # the PyInstaller .exe
         command = [sys.executable, *argv]
+        # The one-file exe unpacks itself to a temp folder that is deleted when
+        # this copy exits. Without this, the new copy inherits PyInstaller's
+        # settings and looks for its files in that folder: it must start fresh.
+        env = {k: v for k, v in env.items() if not k.startswith(("_PYI_", "_MEI"))}
+        env["PYINSTALLER_RESET_ENVIRONMENT"] = "1"
     else:
         command = [sys.executable, "-m", "squirrel_vim_quest", *argv]
     try:
-        subprocess.Popen([wt, "-d", os.getcwd(), *command])
+        subprocess.Popen([wt, "-d", os.getcwd(), *command], env=env)
     except OSError:
         return False
     return True

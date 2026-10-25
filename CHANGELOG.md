@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.1 (2026-10-25)
+
+**Fix:** starting the game from the Desktop or Start Menu shortcut, or by
+double-clicking `SquirrelVimQuest.exe`, crashed with "No such file or directory
+... strings\en.yaml". The game reopens itself in Windows Terminal, and that new
+copy was looking for its files in the first copy's temporary folder, which
+Windows had already removed. The new copy now starts fresh.
+
+If you installed 1.0.0: download 1.0.1, unzip, and run `install.cmd` again.
+Your stars are kept.
+
 ## 1.0.0 (2026-10-25)
 
 First release. A keyboard game that teaches Vim motions to kids about 6 and up.

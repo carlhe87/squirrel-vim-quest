@@ -71,6 +71,25 @@ def test_main_ignores_no_color(monkeypatch):
     assert "NO_COLOR" not in os.environ
 
 
+def test_exe_relaunch_starts_a_fresh_copy(monkeypatch):
+    """The relaunched .exe must not reuse the first copy's (soon deleted) unpack folder."""
+    import squirrel_vim_quest.app as app_module
+
+    calls = []
+    monkeypatch.setattr(app_module.os, "name", "nt")
+    monkeypatch.delenv("WT_SESSION", raising=False)
+    monkeypatch.delenv("SVQ_NO_WT", raising=False)
+    monkeypatch.setenv("_PYI_APPLICATION_HOME_DIR", r"C:\Temp\_MEI1234")
+    monkeypatch.setattr(app_module.shutil, "which", lambda name: r"C:\wt.exe")
+    monkeypatch.setattr(app_module.sys, "frozen", True, raising=False)
+    monkeypatch.setattr(app_module.subprocess, "Popen", lambda cmd, env: calls.append((cmd, env)))
+    assert app_module._relaunch_in_windows_terminal(["--no-wt"])
+    cmd, env = calls[0]
+    assert cmd[0] == r"C:\wt.exe" and cmd[-1] == "--no-wt"
+    assert env["PYINSTALLER_RESET_ENVIRONMENT"] == "1"
+    assert not any(k.startswith("_PYI_") for k in env)
+
+
 def test_self_check_passes(capsys):
     import squirrel_vim_quest.app as app_module
 
